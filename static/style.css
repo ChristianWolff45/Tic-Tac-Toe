@@ -1,0 +1,52 @@
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font: cursive;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 175px);
+    grid-gap: 7px;
+    background-color: black;
+    margin: 20px auto;
+    width: max-content;
+}
+.cell {
+    width: 175px;
+    height: 175px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: copperplate;
+    font-size: 96px;
+    cursor: pointer;
+}
+button {
+    background-color: #000000; /* Green background */
+    color: white; /* White text */
+    font-size: 16px; /* Medium font size */
+    padding: 10px 20px; /* Add space inside the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #686868; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
